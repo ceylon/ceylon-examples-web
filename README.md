@@ -3,11 +3,11 @@
 This project contains a demo web application named `ceylon.demo.net` that contains both a server-side part and a client-side part. Both are written in Ceylon but one will be compiled for the JVM backend and act as the server while the other will be compiled to JavaScript for use in the client's browser. The project structure is as follows:
 
 ```
-- README               # Useful info
-- modules              # The place where the compiled modules will go
-- source/...           # Your module source files
-- resource/...         # Your module resource files (if any)
-- web-content/...      # The default template module's resources, you can remove it if you don't need it
+- README               # This file
+- source/...           # The example's Ceylon source files
+- web-content/...      # The example's HTML files, stylesheets, images and 3rd party JS libraries
+- .config/...          # The place for Ceylon-specific configuration files
+- ceylonb[.bat]        # THe Ceylon bootstrap script for running Ceylon without having it installed
 ```
 
 ## Compiling the project
