@@ -14,11 +14,11 @@ This project contains a demo web application named `ceylon.demo.net` that contai
 
 To compile the project you can run the following command (you can ignore any warnings):
 
-    ceylon compile,compile-js
+    ./ceylonb compile,compile-js
 
 ## Running the project
 
 And to run the project we simply run:
 
-    ceylon run
+    ./ceylonb run
     
