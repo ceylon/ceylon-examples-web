@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://capedwarf-mlazar.rhcloud.com/ -->
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Welcome to Ceylon</title>
+
+    <style>
+html {
+	background: #f3f3f3;
+	background-image: url(http://static.jboss.org/theme/images/bgs/bg.png);
+	background-repeat:repeat-x;
+}
+body {
+	background: white;
+	color: #555555;
+	font-family:"Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+	width: 60em;
+	margin: 0 auto;
+	box-shadow: 3px 3px 3px #CCC;
+}
+.container {
+	padding: 3em;
+}
+a {
+	color: #369;
+}
+h1 {
+	color:#88201B;
+	font-weight:normal;
+}
+h2 {
+	margin: 2em 0 .5em;
+	border-bottom: 1px solid #999;
+	font-weight:normal;
+}
+pre {
+	background: #F4F3F3;
+	padding: 1em 0 0;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+	border-radius: 1em;
+	color: SlateGrey;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none;
+	padding: .5em 0;
+}
+.brand-image {
+}
+    </style>
+
+</head>
+
+<body>
+    <img class="brand-image" alt="Ceylon lang" src="/img/header.jpg">
+    <div class="container">
+    
+    <h1>Welcome to Ceylon on OpenShift</h1>
+    
+    <p>This is a skeleton project that you can use as a starting
+    point to write your own Ceylon web application and deploy
+    it to OpenShift.</p>
+    
+    <p>The project comes with two samples, one server component
+    <a href="todo">TODO list</a> and a simple client-side
+    <a href="graph.html">Oscilloscope</a> animation which you can take
+    a look at to see how things work</p>
+    
+    <p>To begin, you must clone this project's Git repository, 
+    using <code>git clone</code>. You can find the URL of the 
+    Git repository for this project in the OpenShift web 
+    console, by clicking on the application you just created, 
+    and looking under <b>Source Code</b>.</p>
+    
+    <p>For example, if you application is named <code>sample</code>,
+    and your domain is <code>domain</code>, the Git URL will
+    be something like this:</p>
+    
+    <pre>
+    git clone ssh://56316b4e2d527174890001c5@sample-domain.rhcloud.com/~/git/test.git/
+    </pre>
+    
+    <p>Cloning the repository will create a directory named
+    <code>sample</code>. In it, you'll find Ceylon source code 
+    located under <code>sample/sources</code> and static web
+    content under <code>sample/web-content</code/>.</p
+    
+    <p>You can edit the source code and static files and then 
+    push your changes by going to the <code>sample</code> 
+    directory and running:</p>
+    
+    <pre>
+    git commit -a -m "some commit message"
+    git push origin master
+    </pre>
+    
+    <p>Wait for OpenShift to finish deploying your changes,
+    and then reload this page.</p>
+    
+    <p>This project is configured to start by executing the 
+    toplevel method <code>run()</code> in the module 
+    <code>ceylon.demo.net</code>. You can change module name 
+    by editing the file <code>ceylon.properties</code> located 
+    in <code>sample/.openshift/config/</code>.</p>
+    
+    <p>When you push changes to Ceylon source, the project is 
+    recompiled by OpenShift automatically. The Ceylon compiler
+    will search for dependencies in Ceylon Herd, and in the
+    module repository in 
+    <code>sample/.openshift/config/modules/</code>. So you can 
+    place any precompiled project-specific dependencies in this 
+    repository.</p>
+    
+</div>
+</body>
+</html>
