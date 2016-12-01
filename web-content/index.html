@@ -63,62 +63,15 @@ li {
     <img class="brand-image" alt="Ceylon lang" src="/img/header.jpg">
     <div class="container">
     
-    <h1>Welcome to Ceylon on OpenShift</h1>
+    <h1>Welcome to this Ceylon web application</h1>
     
     <p>This is a skeleton project that you can use as a starting
-    point to write your own Ceylon web application and deploy
-    it to OpenShift.</p>
+    point to write your own Ceylon web application.</p>
     
     <p>The project comes with two samples, one server component
     <a href="todo">TODO list</a> and a simple client-side
     <a href="graph.html">Oscilloscope</a> animation which you can take
     a look at to see how things work</p>
-    
-    <p>To begin, you must clone this project's Git repository, 
-    using <code>git clone</code>. You can find the URL of the 
-    Git repository for this project in the OpenShift web 
-    console, by clicking on the application you just created, 
-    and looking under <b>Source Code</b>.</p>
-    
-    <p>For example, if you application is named <code>sample</code>,
-    and your domain is <code>domain</code>, the Git URL will
-    be something like this:</p>
-    
-    <pre>
-    git clone ssh://56316b4e2d527174890001c5@sample-domain.rhcloud.com/~/git/test.git/
-    </pre>
-    
-    <p>Cloning the repository will create a directory named
-    <code>sample</code>. In it, you'll find Ceylon source code 
-    located under <code>sample/sources</code> and static web
-    content under <code>sample/web-content</code/>.</p
-    
-    <p>You can edit the source code and static files and then 
-    push your changes by going to the <code>sample</code> 
-    directory and running:</p>
-    
-    <pre>
-    git commit -a -m "some commit message"
-    git push origin master
-    </pre>
-    
-    <p>Wait for OpenShift to finish deploying your changes,
-    and then reload this page.</p>
-    
-    <p>This project is configured to start by executing the 
-    toplevel method <code>run()</code> in the module 
-    <code>ceylon.demo.net</code>. You can change module name 
-    by editing the file <code>ceylon.properties</code> located 
-    in <code>sample/.openshift/config/</code>.</p>
-    
-    <p>When you push changes to Ceylon source, the project is 
-    recompiled by OpenShift automatically. The Ceylon compiler
-    will search for dependencies in Ceylon Herd, and in the
-    module repository in 
-    <code>sample/.openshift/config/modules/</code>. So you can 
-    place any precompiled project-specific dependencies in this 
-    repository.</p>
-    
-</div>
+    </div>
 </body>
 </html>
