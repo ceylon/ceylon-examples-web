@@ -34,7 +34,7 @@ shared void run() {
     value host =
             process.environmentVariableValue(
                     "OPENSHIFT_CEYLON_IP") 
-                else "127.0.0.1";
+                else "0.0.0.0";
     
     value homeDir =
             process.environmentVariableValue(
