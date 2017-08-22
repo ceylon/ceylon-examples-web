@@ -8,5 +8,5 @@ resource=resource
 
 [runtool]
 compile=check
-module=com.redhat.demo.net/1.3.2
+module=com.redhat.demo.net/1.3.3
 
